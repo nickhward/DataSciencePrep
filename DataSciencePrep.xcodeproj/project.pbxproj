@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C794CE82A2FB1BC00326B04 /* DataSciencePrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794CE72A2FB1BC00326B04 /* DataSciencePrepApp.swift */; };
+		3C794CEA2A2FB1BC00326B04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794CE92A2FB1BC00326B04 /* ContentView.swift */; };
+		3C794CEC2A2FB1BD00326B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C794CEB2A2FB1BD00326B04 /* Assets.xcassets */; };
+		3C794CEF2A2FB1BD00326B04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C794CEE2A2FB1BD00326B04 /* Preview Assets.xcassets */; };
+		3C794CF12A2FB1BD00326B04 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794CF02A2FB1BD00326B04 /* Persistence.swift */; };
+		3C794CF42A2FB1BD00326B04 /* DataSciencePrep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C794CF22A2FB1BD00326B04 /* DataSciencePrep.xcdatamodeld */; };
+		3C794CFE2A2FB1BD00326B04 /* DataSciencePrepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794CFD2A2FB1BD00326B04 /* DataSciencePrepTests.swift */; };
+		3C794D082A2FB1BD00326B04 /* DataSciencePrepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D072A2FB1BD00326B04 /* DataSciencePrepUITests.swift */; };
+		3C794D0A2A2FB1BD00326B04 /* DataSciencePrepUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D092A2FB1BD00326B04 /* DataSciencePrepUITestsLaunchTests.swift */; };
+		3C794D182A3028AF00326B04 /* CoursesScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D172A3028AF00326B04 /* CoursesScroll.swift */; };
+		3C794D1B2A30295100326B04 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D1A2A30295100326B04 /* Course.swift */; };
+		3C794D1D2A3029FC00326B04 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D1C2A3029FC00326B04 /* RatingView.swift */; };
+		3C794D1F2A302A2700326B04 /* ScrollViewDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D1E2A302A2700326B04 /* ScrollViewDetector.swift */; };
+		3C794D212A302A4100326B04 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D202A302A4100326B04 /* DetailView.swift */; };
+		3C794D242A302AAD00326B04 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D232A302AAD00326B04 /* CustomCorners.swift */; };
+		3C794D262A30370800326B04 /* SwipeCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D252A30370800326B04 /* SwipeCardsView.swift */; };
+		3C794D292A305AFE00326B04 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 3C794D282A305AFE00326B04 /* AsyncAlgorithms */; };
+		3C794D2C2A305B3800326B04 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 3C794D2B2A305B3800326B04 /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C794CFA2A2FB1BD00326B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C794CDC2A2FB1BC00326B04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C794CE32A2FB1BC00326B04;
+			remoteInfo = DataSciencePrep;
+		};
+		3C794D042A2FB1BD00326B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C794CDC2A2FB1BC00326B04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C794CE32A2FB1BC00326B04;
+			remoteInfo = DataSciencePrep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C794CE42A2FB1BC00326B04 /* DataSciencePrep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSciencePrep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C794CE72A2FB1BC00326B04 /* DataSciencePrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSciencePrepApp.swift; sourceTree = "<group>"; };
+		3C794CE92A2FB1BC00326B04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3C794CEB2A2FB1BD00326B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C794CEE2A2FB1BD00326B04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C794CF02A2FB1BD00326B04 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3C794CF32A2FB1BD00326B04 /* DataSciencePrep.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataSciencePrep.xcdatamodel; sourceTree = "<group>"; };
+		3C794CF92A2FB1BD00326B04 /* DataSciencePrepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataSciencePrepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C794CFD2A2FB1BD00326B04 /* DataSciencePrepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSciencePrepTests.swift; sourceTree = "<group>"; };
+		3C794D032A2FB1BD00326B04 /* DataSciencePrepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataSciencePrepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C794D072A2FB1BD00326B04 /* DataSciencePrepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSciencePrepUITests.swift; sourceTree = "<group>"; };
+		3C794D092A2FB1BD00326B04 /* DataSciencePrepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSciencePrepUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C794D172A3028AF00326B04 /* CoursesScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesScroll.swift; sourceTree = "<group>"; };
+		3C794D1A2A30295100326B04 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		3C794D1C2A3029FC00326B04 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		3C794D1E2A302A2700326B04 /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
+		3C794D202A302A4100326B04 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3C794D232A302AAD00326B04 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		3C794D252A30370800326B04 /* SwipeCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C794CE12A2FB1BC00326B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C794D292A305AFE00326B04 /* AsyncAlgorithms in Frameworks */,
+				3C794D2C2A305B3800326B04 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C794CF62A2FB1BD00326B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C794D002A2FB1BD00326B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C794CDB2A2FB1BC00326B04 = {
+			isa = PBXGroup;
+			children = (
+				3C794CE62A2FB1BC00326B04 /* DataSciencePrep */,
+				3C794CFC2A2FB1BD00326B04 /* DataSciencePrepTests */,
+				3C794D062A2FB1BD00326B04 /* DataSciencePrepUITests */,
+				3C794CE52A2FB1BC00326B04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C794CE52A2FB1BC00326B04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C794CE42A2FB1BC00326B04 /* DataSciencePrep.app */,
+				3C794CF92A2FB1BD00326B04 /* DataSciencePrepTests.xctest */,
+				3C794D032A2FB1BD00326B04 /* DataSciencePrepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C794CE62A2FB1BC00326B04 /* DataSciencePrep */ = {
+			isa = PBXGroup;
+			children = (
+				3C794D192A30292F00326B04 /* Models */,
+				3C794D162A30288A00326B04 /* View */,
+				3C794CE72A2FB1BC00326B04 /* DataSciencePrepApp.swift */,
+				3C794CE92A2FB1BC00326B04 /* ContentView.swift */,
+				3C794CEB2A2FB1BD00326B04 /* Assets.xcassets */,
+				3C794CF02A2FB1BD00326B04 /* Persistence.swift */,
+				3C794CF22A2FB1BD00326B04 /* DataSciencePrep.xcdatamodeld */,
+				3C794CED2A2FB1BD00326B04 /* Preview Content */,
+			);
+			path = DataSciencePrep;
+			sourceTree = "<group>";
+		};
+		3C794CED2A2FB1BD00326B04 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C794CEE2A2FB1BD00326B04 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C794CFC2A2FB1BD00326B04 /* DataSciencePrepTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C794CFD2A2FB1BD00326B04 /* DataSciencePrepTests.swift */,
+			);
+			path = DataSciencePrepTests;
+			sourceTree = "<group>";
+		};
+		3C794D062A2FB1BD00326B04 /* DataSciencePrepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C794D072A2FB1BD00326B04 /* DataSciencePrepUITests.swift */,
+				3C794D092A2FB1BD00326B04 /* DataSciencePrepUITestsLaunchTests.swift */,
+			);
+			path = DataSciencePrepUITests;
+			sourceTree = "<group>";
+		};
+		3C794D162A30288A00326B04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C794D172A3028AF00326B04 /* CoursesScroll.swift */,
+				3C794D1C2A3029FC00326B04 /* RatingView.swift */,
+				3C794D1E2A302A2700326B04 /* ScrollViewDetector.swift */,
+				3C794D202A302A4100326B04 /* DetailView.swift */,
+				3C794D232A302AAD00326B04 /* CustomCorners.swift */,
+				3C794D252A30370800326B04 /* SwipeCardsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C794D192A30292F00326B04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C794D1A2A30295100326B04 /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C794CE32A2FB1BC00326B04 /* DataSciencePrep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C794D0D2A2FB1BD00326B04 /* Build configuration list for PBXNativeTarget "DataSciencePrep" */;
+			buildPhases = (
+				3C794CE02A2FB1BC00326B04 /* Sources */,
+				3C794CE12A2FB1BC00326B04 /* Frameworks */,
+				3C794CE22A2FB1BC00326B04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataSciencePrep;
+			packageProductDependencies = (
+				3C794D282A305AFE00326B04 /* AsyncAlgorithms */,
+				3C794D2B2A305B3800326B04 /* SwiftSoup */,
+			);
+			productName = DataSciencePrep;
+			productReference = 3C794CE42A2FB1BC00326B04 /* DataSciencePrep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C794CF82A2FB1BD00326B04 /* DataSciencePrepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C794D102A2FB1BD00326B04 /* Build configuration list for PBXNativeTarget "DataSciencePrepTests" */;
+			buildPhases = (
+				3C794CF52A2FB1BD00326B04 /* Sources */,
+				3C794CF62A2FB1BD00326B04 /* Frameworks */,
+				3C794CF72A2FB1BD00326B04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C794CFB2A2FB1BD00326B04 /* PBXTargetDependency */,
+			);
+			name = DataSciencePrepTests;
+			productName = DataSciencePrepTests;
+			productReference = 3C794CF92A2FB1BD00326B04 /* DataSciencePrepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C794D022A2FB1BD00326B04 /* DataSciencePrepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C794D132A2FB1BD00326B04 /* Build configuration list for PBXNativeTarget "DataSciencePrepUITests" */;
+			buildPhases = (
+				3C794CFF2A2FB1BD00326B04 /* Sources */,
+				3C794D002A2FB1BD00326B04 /* Frameworks */,
+				3C794D012A2FB1BD00326B04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C794D052A2FB1BD00326B04 /* PBXTargetDependency */,
+			);
+			name = DataSciencePrepUITests;
+			productName = DataSciencePrepUITests;
+			productReference = 3C794D032A2FB1BD00326B04 /* DataSciencePrepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C794CDC2A2FB1BC00326B04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3C794CE32A2FB1BC00326B04 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					3C794CF82A2FB1BD00326B04 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3C794CE32A2FB1BC00326B04;
+					};
+					3C794D022A2FB1BD00326B04 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3C794CE32A2FB1BC00326B04;
+					};
+				};
+			};
+			buildConfigurationList = 3C794CDF2A2FB1BC00326B04 /* Build configuration list for PBXProject "DataSciencePrep" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C794CDB2A2FB1BC00326B04;
+			packageReferences = (
+				3C794D272A305AFE00326B04 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				3C794D2A2A305B3800326B04 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+			productRefGroup = 3C794CE52A2FB1BC00326B04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C794CE32A2FB1BC00326B04 /* DataSciencePrep */,
+				3C794CF82A2FB1BD00326B04 /* DataSciencePrepTests */,
+				3C794D022A2FB1BD00326B04 /* DataSciencePrepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C794CE22A2FB1BC00326B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C794CEF2A2FB1BD00326B04 /* Preview Assets.xcassets in Resources */,
+				3C794CEC2A2FB1BD00326B04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C794CF72A2FB1BD00326B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C794D012A2FB1BD00326B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C794CE02A2FB1BC00326B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C794D1B2A30295100326B04 /* Course.swift in Sources */,
+				3C794D262A30370800326B04 /* SwipeCardsView.swift in Sources */,
+				3C794D212A302A4100326B04 /* DetailView.swift in Sources */,
+				3C794CF12A2FB1BD00326B04 /* Persistence.swift in Sources */,
+				3C794CEA2A2FB1BC00326B04 /* ContentView.swift in Sources */,
+				3C794CE82A2FB1BC00326B04 /* DataSciencePrepApp.swift in Sources */,
+				3C794CF42A2FB1BD00326B04 /* DataSciencePrep.xcdatamodeld in Sources */,
+				3C794D182A3028AF00326B04 /* CoursesScroll.swift in Sources */,
+				3C794D1D2A3029FC00326B04 /* RatingView.swift in Sources */,
+				3C794D1F2A302A2700326B04 /* ScrollViewDetector.swift in Sources */,
+				3C794D242A302AAD00326B04 /* CustomCorners.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C794CF52A2FB1BD00326B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C794CFE2A2FB1BD00326B04 /* DataSciencePrepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C794CFF2A2FB1BD00326B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C794D0A2A2FB1BD00326B04 /* DataSciencePrepUITestsLaunchTests.swift in Sources */,
+				3C794D082A2FB1BD00326B04 /* DataSciencePrepUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C794CFB2A2FB1BD00326B04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C794CE32A2FB1BC00326B04 /* DataSciencePrep */;
+			targetProxy = 3C794CFA2A2FB1BD00326B04 /* PBXContainerItemProxy */;
+		};
+		3C794D052A2FB1BD00326B04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C794CE32A2FB1BC00326B04 /* DataSciencePrep */;
+			targetProxy = 3C794D042A2FB1BD00326B04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C794D0B2A2FB1BD00326B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C794D0C2A2FB1BD00326B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C794D0E2A2FB1BD00326B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DataSciencePrep/Preview Content\"";
+				DEVELOPMENT_TEAM = M76B6XBWGH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NicholasHugoWard.DataSciencePrep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C794D0F2A2FB1BD00326B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DataSciencePrep/Preview Content\"";
+				DEVELOPMENT_TEAM = M76B6XBWGH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NicholasHugoWard.DataSciencePrep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C794D112A2FB1BD00326B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M76B6XBWGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NicholasHugoWard.DataSciencePrepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataSciencePrep.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DataSciencePrep";
+			};
+			name = Debug;
+		};
+		3C794D122A2FB1BD00326B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M76B6XBWGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NicholasHugoWard.DataSciencePrepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataSciencePrep.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DataSciencePrep";
+			};
+			name = Release;
+		};
+		3C794D142A2FB1BD00326B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M76B6XBWGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NicholasHugoWard.DataSciencePrepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DataSciencePrep;
+			};
+			name = Debug;
+		};
+		3C794D152A2FB1BD00326B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M76B6XBWGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NicholasHugoWard.DataSciencePrepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DataSciencePrep;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C794CDF2A2FB1BC00326B04 /* Build configuration list for PBXProject "DataSciencePrep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C794D0B2A2FB1BD00326B04 /* Debug */,
+				3C794D0C2A2FB1BD00326B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C794D0D2A2FB1BD00326B04 /* Build configuration list for PBXNativeTarget "DataSciencePrep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C794D0E2A2FB1BD00326B04 /* Debug */,
+				3C794D0F2A2FB1BD00326B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C794D102A2FB1BD00326B04 /* Build configuration list for PBXNativeTarget "DataSciencePrepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C794D112A2FB1BD00326B04 /* Debug */,
+				3C794D122A2FB1BD00326B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C794D132A2FB1BD00326B04 /* Build configuration list for PBXNativeTarget "DataSciencePrepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C794D142A2FB1BD00326B04 /* Debug */,
+				3C794D152A2FB1BD00326B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C794D272A305AFE00326B04 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		3C794D2A2A305B3800326B04 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C794D282A305AFE00326B04 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C794D272A305AFE00326B04 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+		3C794D2B2A305B3800326B04 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C794D2A2A305B3800326B04 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3C794CF22A2FB1BD00326B04 /* DataSciencePrep.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C794CF32A2FB1BD00326B04 /* DataSciencePrep.xcdatamodel */,
+			);
+			currentVersion = 3C794CF32A2FB1BD00326B04 /* DataSciencePrep.xcdatamodel */;
+			path = DataSciencePrep.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3C794CDC2A2FB1BC00326B04 /* Project object */;
+}
