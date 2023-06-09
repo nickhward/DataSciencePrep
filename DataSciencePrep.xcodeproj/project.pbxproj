@@ -25,6 +25,31 @@
 		3C794D262A30370800326B04 /* SwipeCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D252A30370800326B04 /* SwipeCardsView.swift */; };
 		3C794D292A305AFE00326B04 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 3C794D282A305AFE00326B04 /* AsyncAlgorithms */; };
 		3C794D2C2A305B3800326B04 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 3C794D2B2A305B3800326B04 /* SwiftSoup */; };
+		3C794D2E2A30D2F800326B04 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D2D2A30D2F800326B04 /* TestView.swift */; };
+		3C794D312A30D33200326B04 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D302A30D33200326B04 /* TestViewModel.swift */; };
+		3C794D332A30D37A00326B04 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D322A30D37A00326B04 /* ResultsView.swift */; };
+		3C794D6D2A30FC5100326B04 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 3C794D6C2A30FC5100326B04 /* Markdown */; };
+		3C794D742A31026800326B04 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 3C794D732A31026800326B04 /* GoogleGenerativeAI */; };
+		3C794D7D2A3108E200326B04 /* GPTEncoder in Frameworks */ = {isa = PBXBuildFile; productRef = 3C794D7C2A3108E200326B04 /* GPTEncoder */; };
+		3C794D952A310FD500326B04 /* Highlighter in Frameworks */ = {isa = PBXBuildFile; productRef = 3C794D942A310FD500326B04 /* Highlighter */; };
+		3C794DA82A31102300326B04 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D972A31102200326B04 /* MessageRowView.swift */; };
+		3C794DA92A31102300326B04 /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D982A31102300326B04 /* ChatGPTAPI.swift */; };
+		3C794DAA2A31102300326B04 /* ChatGPTAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D992A31102300326B04 /* ChatGPTAPIModels.swift */; };
+		3C794DAB2A31102300326B04 /* LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D9B2A31102300326B04 /* LLMProvider.swift */; };
+		3C794DAC2A31102300326B04 /* LLMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D9C2A31102300326B04 /* LLMClient.swift */; };
+		3C794DAD2A31102300326B04 /* PaLMChatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D9D2A31102300326B04 /* PaLMChatAPI.swift */; };
+		3C794DAE2A31102300326B04 /* LLMConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D9E2A31102300326B04 /* LLMConfig.swift */; };
+		3C794DAF2A31102300326B04 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794D9F2A31102300326B04 /* ViewModel.swift */; };
+		3C794DB02A31102300326B04 /* ResponseParsingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DA02A31102300326B04 /* ResponseParsingTask.swift */; };
+		3C794DB12A31102300326B04 /* LLMConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DA12A31102300326B04 /* LLMConfigView.swift */; };
+		3C794DB22A31102300326B04 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DA22A31102300326B04 /* MessageRow.swift */; };
+		3C794DB32A31102300326B04 /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DA32A31102300326B04 /* DotLoadingView.swift */; };
+		3C794DB42A31102300326B04 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DA42A31102300326B04 /* ChatContentView.swift */; };
+		3C794DB52A31102300326B04 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DA52A31102300326B04 /* CodeBlockView.swift */; };
+		3C794DB62A31102300326B04 /* MarkdownAttributedStringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DA62A31102300326B04 /* MarkdownAttributedStringParser.swift */; };
+		3C794DB72A31102300326B04 /* ParserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DA72A31102300326B04 /* ParserResult.swift */; };
+		3C794DBB2A3114E400326B04 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DBA2A3114E400326B04 /* DataViewModel.swift */; };
+		3C794DBD2A32F40100326B04 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C794DBC2A32F40100326B04 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +89,27 @@
 		3C794D202A302A4100326B04 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3C794D232A302AAD00326B04 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 		3C794D252A30370800326B04 /* SwipeCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardsView.swift; sourceTree = "<group>"; };
+		3C794D2D2A30D2F800326B04 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		3C794D302A30D33200326B04 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		3C794D322A30D37A00326B04 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		3C794D972A31102200326B04 /* MessageRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		3C794D982A31102300326B04 /* ChatGPTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
+		3C794D992A31102300326B04 /* ChatGPTAPIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTAPIModels.swift; sourceTree = "<group>"; };
+		3C794D9B2A31102300326B04 /* LLMProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMProvider.swift; sourceTree = "<group>"; };
+		3C794D9C2A31102300326B04 /* LLMClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMClient.swift; sourceTree = "<group>"; };
+		3C794D9D2A31102300326B04 /* PaLMChatAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaLMChatAPI.swift; sourceTree = "<group>"; };
+		3C794D9E2A31102300326B04 /* LLMConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMConfig.swift; sourceTree = "<group>"; };
+		3C794D9F2A31102300326B04 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3C794DA02A31102300326B04 /* ResponseParsingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseParsingTask.swift; sourceTree = "<group>"; };
+		3C794DA12A31102300326B04 /* LLMConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMConfigView.swift; sourceTree = "<group>"; };
+		3C794DA22A31102300326B04 /* MessageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		3C794DA32A31102300326B04 /* DotLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotLoadingView.swift; sourceTree = "<group>"; };
+		3C794DA42A31102300326B04 /* ChatContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
+		3C794DA52A31102300326B04 /* CodeBlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
+		3C794DA62A31102300326B04 /* MarkdownAttributedStringParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownAttributedStringParser.swift; sourceTree = "<group>"; };
+		3C794DA72A31102300326B04 /* ParserResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserResult.swift; sourceTree = "<group>"; };
+		3C794DBA2A3114E400326B04 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		3C794DBC2A32F40100326B04 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +117,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C794D742A31026800326B04 /* GoogleGenerativeAI in Frameworks */,
+				3C794D6D2A30FC5100326B04 /* Markdown in Frameworks */,
 				3C794D292A305AFE00326B04 /* AsyncAlgorithms in Frameworks */,
 				3C794D2C2A305B3800326B04 /* SwiftSoup in Frameworks */,
+				3C794D952A310FD500326B04 /* Highlighter in Frameworks */,
+				3C794D7D2A3108E200326B04 /* GPTEncoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +150,7 @@
 				3C794CFC2A2FB1BD00326B04 /* DataSciencePrepTests */,
 				3C794D062A2FB1BD00326B04 /* DataSciencePrepUITests */,
 				3C794CE52A2FB1BC00326B04 /* Products */,
+				3C794D712A30FD7400326B04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +167,8 @@
 		3C794CE62A2FB1BC00326B04 /* DataSciencePrep */ = {
 			isa = PBXGroup;
 			children = (
+				3C794D962A31100900326B04 /* GPTVIEWS */,
+				3C794D2F2A30D31A00326B04 /* ViewModels */,
 				3C794D192A30292F00326B04 /* Models */,
 				3C794D162A30288A00326B04 /* View */,
 				3C794CE72A2FB1BC00326B04 /* DataSciencePrepApp.swift */,
@@ -156,12 +209,16 @@
 		3C794D162A30288A00326B04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C794D5B2A30EB1000326B04 /* OPENAI_VIEWS */,
 				3C794D172A3028AF00326B04 /* CoursesScroll.swift */,
 				3C794D1C2A3029FC00326B04 /* RatingView.swift */,
 				3C794D1E2A302A2700326B04 /* ScrollViewDetector.swift */,
 				3C794D202A302A4100326B04 /* DetailView.swift */,
 				3C794D232A302AAD00326B04 /* CustomCorners.swift */,
 				3C794D252A30370800326B04 /* SwipeCardsView.swift */,
+				3C794D2D2A30D2F800326B04 /* TestView.swift */,
+				3C794D322A30D37A00326B04 /* ResultsView.swift */,
+				3C794DBC2A32F40100326B04 /* LoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +229,60 @@
 				3C794D1A2A30295100326B04 /* Course.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3C794D2F2A30D31A00326B04 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3C794D302A30D33200326B04 /* TestViewModel.swift */,
+				3C794DBA2A3114E400326B04 /* DataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3C794D5B2A30EB1000326B04 /* OPENAI_VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OPENAI_VIEWS;
+			sourceTree = "<group>";
+		};
+		3C794D712A30FD7400326B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C794D962A31100900326B04 /* GPTVIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				3C794D982A31102300326B04 /* ChatGPTAPI.swift */,
+				3C794D992A31102300326B04 /* ChatGPTAPIModels.swift */,
+				3C794DA52A31102300326B04 /* CodeBlockView.swift */,
+				3C794DA42A31102300326B04 /* ChatContentView.swift */,
+				3C794DA32A31102300326B04 /* DotLoadingView.swift */,
+				3C794D9A2A31102300326B04 /* LLM Provider */,
+				3C794DA12A31102300326B04 /* LLMConfigView.swift */,
+				3C794DA62A31102300326B04 /* MarkdownAttributedStringParser.swift */,
+				3C794DA22A31102300326B04 /* MessageRow.swift */,
+				3C794D972A31102200326B04 /* MessageRowView.swift */,
+				3C794DA72A31102300326B04 /* ParserResult.swift */,
+				3C794DA02A31102300326B04 /* ResponseParsingTask.swift */,
+				3C794D9F2A31102300326B04 /* ViewModel.swift */,
+			);
+			path = GPTVIEWS;
+			sourceTree = "<group>";
+		};
+		3C794D9A2A31102300326B04 /* LLM Provider */ = {
+			isa = PBXGroup;
+			children = (
+				3C794D9B2A31102300326B04 /* LLMProvider.swift */,
+				3C794D9C2A31102300326B04 /* LLMClient.swift */,
+				3C794D9D2A31102300326B04 /* PaLMChatAPI.swift */,
+				3C794D9E2A31102300326B04 /* LLMConfig.swift */,
+			);
+			path = "LLM Provider";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +304,10 @@
 			packageProductDependencies = (
 				3C794D282A305AFE00326B04 /* AsyncAlgorithms */,
 				3C794D2B2A305B3800326B04 /* SwiftSoup */,
+				3C794D6C2A30FC5100326B04 /* Markdown */,
+				3C794D732A31026800326B04 /* GoogleGenerativeAI */,
+				3C794D7C2A3108E200326B04 /* GPTEncoder */,
+				3C794D942A310FD500326B04 /* Highlighter */,
 			);
 			productName = DataSciencePrep;
 			productReference = 3C794CE42A2FB1BC00326B04 /* DataSciencePrep.app */;
@@ -269,6 +384,10 @@
 			packageReferences = (
 				3C794D272A305AFE00326B04 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 				3C794D2A2A305B3800326B04 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				3C794D6B2A30FC5100326B04 /* XCRemoteSwiftPackageReference "swift-markdown" */,
+				3C794D722A31026800326B04 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				3C794D7B2A3108E200326B04 /* XCRemoteSwiftPackageReference "GPTEncoder" */,
+				3C794D932A310FD500326B04 /* XCRemoteSwiftPackageReference "HighlighterSwift" */,
 			);
 			productRefGroup = 3C794CE52A2FB1BC00326B04 /* Products */;
 			projectDirPath = "";
@@ -312,16 +431,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C794DAB2A31102300326B04 /* LLMProvider.swift in Sources */,
+				3C794DA92A31102300326B04 /* ChatGPTAPI.swift in Sources */,
+				3C794D2E2A30D2F800326B04 /* TestView.swift in Sources */,
+				3C794DB72A31102300326B04 /* ParserResult.swift in Sources */,
+				3C794DAC2A31102300326B04 /* LLMClient.swift in Sources */,
+				3C794DBD2A32F40100326B04 /* LoadingView.swift in Sources */,
 				3C794D1B2A30295100326B04 /* Course.swift in Sources */,
+				3C794DAA2A31102300326B04 /* ChatGPTAPIModels.swift in Sources */,
+				3C794DAE2A31102300326B04 /* LLMConfig.swift in Sources */,
+				3C794DB52A31102300326B04 /* CodeBlockView.swift in Sources */,
+				3C794D312A30D33200326B04 /* TestViewModel.swift in Sources */,
+				3C794DBB2A3114E400326B04 /* DataViewModel.swift in Sources */,
 				3C794D262A30370800326B04 /* SwipeCardsView.swift in Sources */,
 				3C794D212A302A4100326B04 /* DetailView.swift in Sources */,
 				3C794CF12A2FB1BD00326B04 /* Persistence.swift in Sources */,
+				3C794DA82A31102300326B04 /* MessageRowView.swift in Sources */,
 				3C794CEA2A2FB1BC00326B04 /* ContentView.swift in Sources */,
+				3C794DAD2A31102300326B04 /* PaLMChatAPI.swift in Sources */,
+				3C794DB42A31102300326B04 /* ChatContentView.swift in Sources */,
+				3C794DB22A31102300326B04 /* MessageRow.swift in Sources */,
+				3C794DAF2A31102300326B04 /* ViewModel.swift in Sources */,
 				3C794CE82A2FB1BC00326B04 /* DataSciencePrepApp.swift in Sources */,
 				3C794CF42A2FB1BD00326B04 /* DataSciencePrep.xcdatamodeld in Sources */,
+				3C794DB02A31102300326B04 /* ResponseParsingTask.swift in Sources */,
 				3C794D182A3028AF00326B04 /* CoursesScroll.swift in Sources */,
 				3C794D1D2A3029FC00326B04 /* RatingView.swift in Sources */,
+				3C794DB32A31102300326B04 /* DotLoadingView.swift in Sources */,
+				3C794DB12A31102300326B04 /* LLMConfigView.swift in Sources */,
+				3C794D332A30D37A00326B04 /* ResultsView.swift in Sources */,
 				3C794D1F2A302A2700326B04 /* ScrollViewDetector.swift in Sources */,
+				3C794DB62A31102300326B04 /* MarkdownAttributedStringParser.swift in Sources */,
 				3C794D242A302AAD00326B04 /* CustomCorners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -463,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -484,11 +624,14 @@
 				DEVELOPMENT_TEAM = M76B6XBWGH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to record your answers.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your recorded answers.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,11 +656,14 @@
 				DEVELOPMENT_TEAM = M76B6XBWGH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to record your answers.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your recorded answers.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,7 +686,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M76B6XBWGH;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NicholasHugoWard.DataSciencePrepTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,7 +706,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M76B6XBWGH;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NicholasHugoWard.DataSciencePrepTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -665,6 +811,38 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		3C794D6B2A30FC5100326B04 /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-markdown";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		3C794D722A31026800326B04 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		3C794D7B2A3108E200326B04 /* XCRemoteSwiftPackageReference "GPTEncoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/GPTEncoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		3C794D932A310FD500326B04 /* XCRemoteSwiftPackageReference "HighlighterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/HighlighterSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -677,6 +855,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3C794D2A2A305B3800326B04 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
+		};
+		3C794D6C2A30FC5100326B04 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C794D6B2A30FC5100326B04 /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
+		3C794D732A31026800326B04 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C794D722A31026800326B04 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		3C794D7C2A3108E200326B04 /* GPTEncoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C794D7B2A3108E200326B04 /* XCRemoteSwiftPackageReference "GPTEncoder" */;
+			productName = GPTEncoder;
+		};
+		3C794D942A310FD500326B04 /* Highlighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C794D932A310FD500326B04 /* XCRemoteSwiftPackageReference "HighlighterSwift" */;
+			productName = Highlighter;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -4,10 +4,8 @@
 //
 //  Created by Nick Ward on 6/6/23.
 //
-
 import SwiftUI
 import SwiftSoup
-
 
 struct Card: Identifiable {
     let id = UUID()
@@ -15,11 +13,11 @@ struct Card: Identifiable {
 }
 
 struct SwipeCardsView: View {
+    @ObservedObject var vm_1: DataSciencePrepViewModel
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var course: Course
-    @State var currentIndex: Int = 0 // For tracking the current card
-    @State var showAlert = false // For showing alert when reaching the last card
-    @State var isActive = false // For navigation to TestView
+    @State var currentIndex: Int = 0
+    @State var shouldGoToTestView = false
     
     private func getCardOffset(_ geometry: GeometryProxy, _ index: Int) -> CGFloat {
         if currentIndex == index {
@@ -31,86 +29,94 @@ struct SwipeCardsView: View {
         }
     }
     
-    @ViewBuilder
-        var backButton : some View {
-            Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
-            }) {
-                HStack {
-                    Image(systemName: "arrow.left")
-                        .aspectRatio(contentMode: .fit)
-                }
-                .foregroundColor(.white)
-                .padding(.horizontal)
-                .padding(.vertical, 10)
-                .background(Color.black.opacity(0.6))
-                .cornerRadius(30)
-                .shadow(radius: 10)
-            }
-        }
+    @State private var swipedOnLastCard = false
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                // Card Count
-                HStack {
-                                    self.backButton
-                                    Spacer()
-                                    Text("\(currentIndex + 1)/\(course.cardContent.count)")
-                                        .font(.system(size: 40, weight: .bold, design: .rounded))
-                                        .foregroundColor(.white)
-                                        .padding()
-                                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing))
-                                        .cornerRadius(20)
-                                        .shadow(radius: 10)
-                                        .transition(AnyTransition.scale(scale: 0.5).combined(with: .opacity))
-                                        .animation(.easeInOut(duration: 0.5))
-                                        .padding(.trailing, 20)
-                                    
-                                }
-
-                Spacer()
+                NavigationBarView(currentIndex: $currentIndex, totalCards: course.cardContent.count, presentationMode: presentationMode)
                 
                 ZStack {
                     ForEach(course.cardContent.indices, id: \.self) { index in
                         CardView(content: course.cardContent[index])
                             .offset(x: self.getCardOffset(geometry, index), y: 0)
-                            .animation(.spring())
-                            .padding(.horizontal)
-                            .gesture(DragGesture()
-                                .onEnded { value in
-                                    if value.translation.width < -100 { // Swipe left
-                                        if currentIndex == course.cardContent.count - 1 { // If it's the last card
-                                            showAlert = true
-                                        } else {
-                                            currentIndex += 1
-                                        }
-                                    } else if value.translation.width > 100 { // Swipe right
-                                        if currentIndex > 0 {
-                                            currentIndex -= 1
-                                        }
+                            .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.6))
+                            .gesture(DragGesture().onEnded { value in
+                                if value.translation.width < -100 {
+                                    if currentIndex < course.cardContent.count - 1 {
+                                        currentIndex += 1
+                                    } else {
+                                        swipedOnLastCard = true
+                                        shouldGoToTestView = true
+                                    }
+                                } else if value.translation.width > 100 {
+                                    if currentIndex > 0 {
+                                        currentIndex -= 1
                                     }
                                 }
-                            )
+                            })
                     }
                 }
                 
                 Spacer()
-                
-                // Navigation to TestView
-                NavigationLink(destination: TestView(), isActive: $isActive) {
-                    EmptyView()
-                }
             }
             .padding()
+            .background(Color.white)
             .navigationBarBackButtonHidden(true)
+            NavigationLink(destination: TestView(vm_1: vm_1), isActive: $shouldGoToTestView) {
+                        EmptyView()
+                    }
+        }
+    }
+}
 
+struct NavigationBarView: View {
+    @Binding var currentIndex: Int
+    var totalCards: Int
+    var presentationMode: Binding<PresentationMode>
+    
+    var body: some View {
+        HStack {
+            BackButtonView(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            })
+            Spacer()
+            CardCounterView(current: currentIndex + 1, total: totalCards)
         }
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("Proceed to Test"), message: Text("You have reached the last card. Do you want to proceed to the test?"), primaryButton: .default(Text("Yes"), action: {
-                isActive = true
-            }), secondaryButton: .cancel())
+    }
+}
+
+struct BackButtonView: View {
+    var action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            Image(systemName: "arrow.left.circle.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+                .foregroundColor(.blue)
+                .padding()
+                .background(Color.white)
+                .cornerRadius(40)
+                .shadow(radius: 3)
         }
+    }
+}
+
+struct CardCounterView: View {
+    var current: Int
+    var total: Int
+    
+    var body: some View {
+        Text("\(current)/\(total)")
+            .font(.system(size: 24, weight: .bold, design: .rounded))
+            .foregroundColor(.white)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+            .background(Color.blue)
+            .cornerRadius(20)
+            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
     }
 }
 
@@ -123,14 +129,19 @@ struct CardView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.vertical)
+                .foregroundColor(.white)
+                .padding(.horizontal)
+                .background(Color.blue.opacity(0.7))
+                .cornerRadius(10)
             
-            formattedDescription()
+            Text(.init(content.description))
+            //formattedDescription()
         }
         .padding()
         .frame(minWidth: 0, maxWidth: .infinity)
         .background(Color.white)
         .cornerRadius(10)
-        .shadow(radius: 10)
+        .shadow(color: .gray, radius: 10, x: 2, y: 2)
     }
     
     func formattedDescription() -> some View {
@@ -139,11 +150,11 @@ struct CardView: View {
                 if line.hasPrefix("•") {
                     HStack {
                         Text("•")
-                        processHTML(String(line.dropFirst(2)))
+                        Text(String(line.dropFirst(2)))
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 } else {
-                    processHTML(String(line))
+                    Text(String(line))
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
@@ -185,16 +196,6 @@ struct CardView: View {
         
         return result
     }
-
-
-
 }
 
-struct TestView: View {
-    var body: some View {
-        Text("Final Test View")
-            .font(.largeTitle)
-            .fontWeight(.bold)
-            .padding()
-    }
-}
+

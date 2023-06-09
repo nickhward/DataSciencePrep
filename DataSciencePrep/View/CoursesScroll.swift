@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Home: View {
     /// View Properties
+    @EnvironmentObject var vm_1: DataSciencePrepViewModel
     @State private var activeTag: String = "Statistics"
     @State private var carouselMode: Bool = false
     /// For Matched Geometry Effect
@@ -84,7 +85,7 @@ struct Home: View {
         }
         .overlay {
             if let selectedCourse, showDetailView {
-                DetailView(show: $showDetailView, animation: animation, course: selectedCourse)
+                DetailView(vm_1: vm_1, show: $showDetailView, animation: animation, course: selectedCourse)
                 /// For More Fluent Animation Transition
                     .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
             }

@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct DetailView: View {
+    @ObservedObject var vm_1: DataSciencePrepViewModel
     @Binding var show: Bool
     var animation: Namespace.ID
     var course: Course
@@ -154,8 +155,8 @@ struct DetailView: View {
             }
             
             Button(action: {}) {
-                NavigationLink(destination: SwipeCardsView(course: course)) {
-                    Text("Read Now")
+                NavigationLink(destination: SwipeCardsView(vm_1: vm_1, course: course)) {
+                    Text("Start")
                         .font(.callout)
                         .fontWeight(.semibold)
                         .padding(.horizontal, 45)

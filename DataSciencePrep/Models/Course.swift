@@ -39,51 +39,58 @@ var courses: [String: [Course]] = [
 let statisticsCourses: [Course] = [
     .init(
         title: "Foundations",
-        imageName: "statisticsfoundations",
-        author: "Rachael Lippincott",
+        imageName: "statsfound",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
         cardContent: [
             CardContent(title: "Measures of Central Tendency", description: """
+                • **Mean:** The average value of a data set, obtained by adding all numbers in the set and then dividing by the count of numbers.
                 
-                • <bold>Mean:</bold> The average value of a data set, obtained by adding all numbers in the set and then dividing by the count of numbers.
-                • <bold>Median:</bold> The middle value in a data set. For an odd number of observations, it is the middle number; for an even number of observations, it is the average of the two middle numbers.
-                • <bold>Mode:</bold> The most frequently occurring value in a data set. A data set may have one mode (unimodal), more than one mode (multimodal), or no mode at all.
+                • **Median:** The middle value in a data set. For an odd number of observations, it is the middle number; for an even number of observations, it is the average of the two middle numbers.
+                
+                • **Mode:** The most frequently occurring value in a data set. A data set may have one mode (unimodal), more than one mode (multimodal), or no mode at all.
                 """),
             CardContent(title: "Measures of Dispersion", description: """
+                • **Range:** The difference between the highest and lowest values in a data set.
                 
-                • <bold>Range:</bold> The difference between the highest and lowest values in a data set.
-                • <bold>Variance:</bold> The average of the squared differences from the mean. It measures how far each number in the set is from the mean and thus from every other number in the set.
-                • <bold>Standard Deviation:</bold> The square root of variance, providing a measure of dispersion in the same units as the original data.
-                • <bold>Interquartile Range (IQR):</bold> The range between the first quartile (25th percentile) and the third quartile (75th percentile). It measures statistical dispersion, or how far apart the data points are spread.
+                • **Variance:** The average of the squared differences from the mean. It measures how far each number in the set is from the mean and thus from every other number in the set.
+                
+                • **Standard Deviation:** The square root of variance, providing a measure of dispersion in the same units as the original data.
+                
+                • **Interquartile Range (IQR):** The range between the first quartile (25th percentile) and the third quartile (75th percentile). It measures statistical dispersion, or how far apart the data points are spread.
                 """),
             CardContent(title: "Sampling Techniques", description: """
+                • **Random Sampling:** Each member of the population has an equal chance of being selected.
                 
-                • <bold>Random Sampling:</bold> Each member of the population has an equal chance of being selected.
-                • <bold>Stratified Sampling:</bold> The population is divided into subgroups (strata) based on specific characteristics, and samples are randomly selected from each stratum.
-                • <bold>Cluster Sampling:</bold> The population is divided into groups (clusters), usually geographically, and a random sampling of clusters is selected.
-                • <bold>Systematic Sampling:</bold> Every nth member of the population is selected.
+                • **Stratified Sampling:** The population is divided into subgroups (strata) based on specific characteristics, and samples are randomly selected from each stratum.
+                
+                • **Cluster Sampling:** The population is divided into groups (clusters), usually geographically, and a random sampling of clusters is selected.
+                
+                • **Systematic Sampling:** Every nth member of the population is selected.
                 """),
             CardContent(title: "Types of Data", description: """
+                • **Categorical/Nominal:** Data that can be sorted into categories but having no order or priority. E.g., Colors, Names.
                 
-                • <bold>Categorical/Nominal:</bold> Data that can be sorted into categories but having no order or priority. Eg: Colors, Names.
-                • <bold>Ordinal:</bold> Categorical data that has an explicit order. Eg: Ratings scale from 1 to 5.
-                • <bold>Interval:</bold> Numerical data without a true zero point. Eg: Temperature in Celsius or Fahrenheit.
-                • <bold>Ratio:</bold> Numerical data with a true zero point. Eg: Age, Height.
+                • **Ordinal:** Categorical data that has an explicit order. E.g., Ratings scale from 1 to 5.
+                
+                • **Interval:** Numerical data without a true zero point. E.g., Temperature in Celsius or Fahrenheit.
+                
+                • **Ratio:** Numerical data with a true zero point. E.g., Age, Height.
                 """),
             CardContent(title: "Population vs Sample", description: """
+                • **Population:** The entire group that you want to draw conclusions about.
                 
-                • <bold>Population:</bold> The entire group that you want to draw conclusions about.
-                • <bold>Sample:</bold> A subset of the population that is used in your study. It is a slice of the population and needs to be representative for your conclusions to be valid for the population.
+                • **Sample:** A subset of the population that is used in your study. It is a slice of the population and needs to be representative for your conclusions to be valid for the population.
                 """),
             
         ]
     ),
     .init(
         title: "Normal Distribution",
-        imageName: "Book 2",
-        author: "William B.Irvine",
+        imageName: "statisticsfoundations",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -95,8 +102,8 @@ let statisticsCourses: [Course] = [
     ),
     .init(
         title: "Confidence",
-        imageName: "Book 2",
-        author: "William B.Irvine",
+        imageName: "confidence",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -108,8 +115,8 @@ let statisticsCourses: [Course] = [
     ),
     .init(
         title: "Type I and Type II Errors",
-        imageName: "Book 2",
-        author: "William B.Irvine",
+        imageName: "typeerror",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -120,8 +127,8 @@ let statisticsCourses: [Course] = [
     ),
     .init(
         title: "Bayesian Statistics",
-        imageName: "Book 2",
-        author: "William B.Irvine",
+        imageName: "baye",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -136,7 +143,7 @@ var probabilityCourses: [Course] = [
     .init(
           title: "Bayes",
           imageName: "Book 1",
-          author: "Rachael Lippincott",
+          author: "Nicholas Ward",
           rating: 4,
           bookViews: 1023,
           courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -148,7 +155,7 @@ var probabilityCourses: [Course] = [
     .init(
           title: "Theorems",
           imageName: "Book 2",
-          author: "William B.Irvine",
+          author: "Nicholas Ward",
           rating: 5,
           bookViews: 2049,
           courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -160,7 +167,7 @@ var probabilityCourses: [Course] = [
     .init(
           title: "Bayes",
           imageName: "Book 1",
-          author: "Rachael Lippincott",
+          author: "Nicholas Ward",
           rating: 4,
           bookViews: 1023,
           courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -172,7 +179,7 @@ var probabilityCourses: [Course] = [
     .init(
           title: "Theorems",
           imageName: "Book 2",
-          author: "William B.Irvine",
+          author: "Nicholas Ward",
           rating: 5,
           bookViews: 2049,
           courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -187,7 +194,7 @@ var machineLearningCourses: [Course] = [
     .init(
         title: "Supervised ML",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -199,7 +206,7 @@ var machineLearningCourses: [Course] = [
     .init(
         title: "Linear Regression",
         imageName: "Book 2",
-        author: "William B.Irvine",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -211,7 +218,7 @@ var machineLearningCourses: [Course] = [
     .init(
         title: "Supervised ML",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -223,7 +230,7 @@ var machineLearningCourses: [Course] = [
     .init(
         title: "Linear Regression",
         imageName: "Book 2",
-        author: "William B.Irvine",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -235,7 +242,7 @@ var machineLearningCourses: [Course] = [
     .init(
         title: "Supervised ML",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -247,7 +254,7 @@ var machineLearningCourses: [Course] = [
     .init(
         title: "Linear Regression",
         imageName: "Book 2",
-        author: "William B.Irvine",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -262,7 +269,7 @@ var deepLearningCourses: [Course] = [
     .init(
         title: "PyTorch",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -274,7 +281,7 @@ var deepLearningCourses: [Course] = [
     .init(
         title: "Tensorflow",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -286,7 +293,7 @@ var deepLearningCourses: [Course] = [
     .init(
         title: "PyTorch",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -301,7 +308,7 @@ var sqlCourses: [Course] = [
     .init(
         title: "Basic SQL",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -313,7 +320,7 @@ var sqlCourses: [Course] = [
     .init(
         title: "Window Functions",
         imageName: "Book 2",
-        author: "William B.Irvine",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -325,7 +332,7 @@ var sqlCourses: [Course] = [
     .init(
         title: "Examples",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -337,7 +344,7 @@ var sqlCourses: [Course] = [
     .init(
         title: "Window Functions",
         imageName: "Book 2",
-        author: "William B.Irvine",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -352,7 +359,7 @@ var pythonCourses: [Course] = [
     .init(
         title: "Intro to Python",
         imageName: "Book 1",
-        author: "Rachael Lippincott",
+        author: "Nicholas Ward",
         rating: 4,
         bookViews: 1023,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
@@ -364,7 +371,7 @@ var pythonCourses: [Course] = [
     .init(
         title: "Understanding pandas",
         imageName: "Book 2",
-        author: "William B.Irvine",
+        author: "Nicholas Ward",
         rating: 5,
         bookViews: 2049,
         courseDescription : "This will include the basics of statistics, why it is necessary, and its role in data interpretation and decision making.",
