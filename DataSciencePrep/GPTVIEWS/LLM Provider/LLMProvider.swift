@@ -41,10 +41,10 @@ PaLM is capable of a wide range of tasks, including commonsense reasoning, arith
     var navigationTitle: String {
         switch self {
         case .chatGPT:
-            return "XCA ChatGPT"
+            return "Data Science Bot"
             
         case .palm:
-            return "XCA PaLMChat"
+            return "Data Science Bot"
         }
     }
     

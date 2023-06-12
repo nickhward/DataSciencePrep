@@ -73,8 +73,13 @@ class TestViewModel: ObservableObject {
     private func stopRecording() {
         audioEngine.stop()
         audioEngine.inputNode.removeTap(onBus: 0)
-        recognitionRequest = nil
+
+        recognitionTask?.cancel() // Cancel any ongoing task
         recognitionTask = nil
+        
+        recognitionRequest?.endAudio() // Indicate that the audio source has finished providing data
+        recognitionRequest = nil
+
         isRecording = false
     }
     

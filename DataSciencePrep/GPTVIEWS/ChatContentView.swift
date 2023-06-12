@@ -17,7 +17,7 @@ struct ChatContentView: View {
 
     
     var body: some View {
-     
+            
             chatListView
                 .navigationTitle(vm.navigationTitle)
         

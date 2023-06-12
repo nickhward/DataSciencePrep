@@ -1,6 +1,6 @@
 import SwiftUI
 
-import SwiftUI
+
 
 struct TestView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -19,7 +19,7 @@ struct TestView: View {
                 }
                 .padding(.top)
                 
-                Text("What is the mean in Data Science?")
+                Text(vm_1.currentQuestion)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(.primary)
@@ -42,6 +42,7 @@ struct TestView: View {
                     viewModel.submitRecording()
                     vm_1.transcript = viewModel.transcript
                     vm_1.isShowingResultView = true
+                    viewModel.deleteRecording()
                 })
                 
                 Spacer()

@@ -47,6 +47,7 @@ struct SwipeCardsView: View {
                                         currentIndex += 1
                                     } else {
                                         swipedOnLastCard = true
+                                        vm_1.course = self.course
                                         shouldGoToTestView = true
                                     }
                                 } else if value.translation.width > 100 {
@@ -83,6 +84,7 @@ struct NavigationBarView: View {
             Spacer()
             CardCounterView(current: currentIndex + 1, total: totalCards)
         }
+        .padding(.vertical)
     }
 }
 
@@ -133,9 +135,10 @@ struct CardView: View {
                 .padding(.horizontal)
                 .background(Color.blue.opacity(0.7))
                 .cornerRadius(10)
-            
-            Text(.init(content.description))
-            //formattedDescription()
+            ScrollView(.vertical, showsIndicators: false) {
+                    Text(.init(content.description))
+            }
+           
         }
         .padding()
         .frame(minWidth: 0, maxWidth: .infinity)
