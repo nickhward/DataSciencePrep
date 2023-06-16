@@ -10,7 +10,7 @@ import CoreData
 
 @main
 struct DataSciencePrepApp: App {
-    @StateObject var vm = ViewModel(api: ChatGPTAPI(apiKey: ""), initialPrompt: "What is the mean in Statistics?: ")
+    @StateObject var vm = ViewModel(api: ChatGPTAPI(apiKey: "YOUR-API-KEY"), initialPrompt: "What is the mean in Statistics?: ")
     @State private var isNotLoading: Bool = false
     @StateObject var vm_1 = DataSciencePrepViewModel()
     @State private var isLoading: Bool = false
