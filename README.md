@@ -21,6 +21,14 @@ Data Science Prep is your portable companion for reinforcing and mastering criti
 
 More features are on the way!
 
+## 🔑 Getting Started:
+
+To start using the Data Science Prep App, you'll first need to sign up for an OpenAI API key. Once you have your API key:
+
+1. Open the `DataSciencePrepApp.swift` file.
+2. Navigate to line 13.
+3. Replace `YOUR-API-KEY` with your actual OpenAI API key.
+
 ## 🏋️‍♂️ Why Data Science Prep?
 
 Data Science is a vast field with a multitude of concepts to grasp and master. Whether you're a beginner or a seasoned professional, Data Science Prep is designed to help you reinforce and master critical concepts in the most convenient way possible. It's like having a personal Data Science tutor right in your pocket!
@@ -48,4 +56,3 @@ If you find this app helpful, please give it a star to show your support and sha
 ---
 
 *Happy learning and coding!* 👨‍💻
-
