@@ -35,7 +35,7 @@ I am constantly working on adding more concepts and practice questions to the ap
 
 ## 💡 Contributions
 
-We welcome contributions! Feel free to submit pull requests or open issues if you find anything you'd like us to improve.
+I welcome contributions! Feel free to submit pull requests or open issues if you find anything you'd like to improve.
 
 ## 💌 Contact
 
